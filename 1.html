@@ -1,0 +1,40 @@
+﻿<html>
+<head>
+<title>Ngân Trang</title>
+    <link rel="shortcut icon" href="NgT.ico" />
+     <style type="text/css">
+         body {
+            background-image:url(25.jpg) ;
+        }
+          </style>
+<script>
+
+
+var OriginTitile = document.title;  
+var titleTime;  
+document.addEventListener('visibilitychange', function() {  
+    if (document.hidden) {
+        document.title = 'click here! ' ;
+        clearTimeout(titleTime);
+    }
+    else {
+        document.title = '(^.^)Xin chào ' ;
+        titleTime = setTimeout(function() {
+            document.title = OriginTitile;
+        }, 2000);
+    }
+});
+
+
+</script>
+</head>
+<body>
+    &nbsp;
+    <center><img alt="Toi yeu Em" src="b.gif" style="height: 238px; width: 322px" />
+
+
+
+    </center>
+
+</body>
+</html>
